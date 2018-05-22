@@ -36,7 +36,7 @@
 just that we'll ensure compatibility with the ones mentioned above.*
 
 
-## Documentation
+## Documentation 
 
 Take a look at the [documentation table of contents](dist/doc/TOC.md).
 
