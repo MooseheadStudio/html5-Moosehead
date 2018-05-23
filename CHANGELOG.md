@@ -1,4 +1,17 @@
-### Moosehead Studio base template (23 May 2018)
+## Its not reccomended to use this version in Production while Development on this skeleton is being worked on. 
+
+### Moosehead Studio base template (24 May 2018)
+
+* Cleaned up template, removing more redundant files
+* added support for SCSS (SASS)
+* added material design icons and custom classes with meaningful names 'md-icon', 'md-1x', 'primary-color'.
+* refined modernizer and converted to SCSS
+* converted main CSS stylesheet to SCSS
+  &nbsp;
+* Issues: & symbol's missing from SCSS main stylesheet. 
+
+
+### Moosehead Studio base template (22 May 2018)
 
 * Initial clone of repository (HTML5-Boilerplate).
 
