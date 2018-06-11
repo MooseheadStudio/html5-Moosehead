@@ -1,5 +1,7 @@
 # www.robotstxt.org/
 
 # Allow crawling of all content
+# Not like the hackers will respect us anyway.
 User-agent: *
 Disallow:
+Sitemap: https://moosehead.studio/sitemap_location.xml

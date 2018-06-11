@@ -1,9 +1,8 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com/) | [Documentation
-table of contents](TOC.md)
+[Documentation table of contents](TOC.md)
 
 # Usage
 
-The most basic usage of HTML5 Boilerplate is to create a static site or simple
+The most basic usage of HTML5 template is to create a static site or simple
 app. Once you've downloaded or cloned the project, that process looks something
 like this:
 
@@ -13,36 +12,46 @@ like this:
 4. Deploy your site.
 
 Cool, right? _It is_. That said, the smart defaults, baseline elements, default
-attribute values and various other utilities that HTML5 Boilerplate offers can
+attribute values and various other utilities that this HTML5 template offers can
 serve as the foundation for whatever you're interested in building.
 
-Even the basic use-case of a simple static site can be enhanced by manipulating
-the code through an automated build process. Moving up in complexity HTML5
-Boilerplate can be integrated with whatever front-end framework, CMS or
-e-commerce platform you're working with. Mix-and-match to your heart's content.
+Moving up in complexity this HTML5 Template has been converted to support Compass
+and SASS CSS coding platforms to make it easier for you to keep upto-date.
+
+This HTML5 template can be integrated with whatever front-end framework, CMS or
+e-commerce platform you're working with. 
+
 Use what you need (toss it in a blender if you need to) and discard the rest.
-HTML5 Boilerplate is a starting point, not a destination.
+This HTML5 template is a starting point, not a destination.
 
 ## Basic structure
 
-A basic HTML5 Boilerplate site initially looks something like this:
+This HTML5 template directory initially looks something like this:
 
 ```
 .
+├── sass
+  └── _core.scss
+  └── _icons.scss
+  └── _mixins.scss
+  └── _variables.scss
+  └── main.scss
+  └── normalize.scss
+  └── material-design-icons-scss.scss
 ├── css
-│   ├── main.css
-│   └── normalize.css
+   ├── main.css
+   └── normalize.css
+   └── material-design-icons-scss.css
 ├── doc
 ├── img
 ├── js
-│   ├── main.js
-│   ├── plugins.js
-│   └── vendor
-│       ├── jquery.min.js
-│       └── modernizr.min.js
+   ├── main.js
+   ├── plugins.js
+   └── vendor
+       ├── jquery.min.js
+       └── modernizr.min.js
 ├── .editorconfig
 ├── .htaccess
-├── 404.html
 ├── browserconfig.xml
 ├── favicon.ico
 ├── humans.txt
@@ -56,6 +65,12 @@ A basic HTML5 Boilerplate site initially looks something like this:
 
 What follows is a general overview of each major part and how to use them.
 
+### scss
+
+This directory contain all your project's SCSS files.
+These files are the uncompressed CSS foundations for the website. [About the
+CSS](scss.md).
+
 ### css
 
 This directory should contain all your project's CSS files. It includes some
@@ -64,7 +79,7 @@ CSS](css.md).
 
 ### doc
 
-This directory contains all the HTML5 Boilerplate documentation. You can use it
+This directory contains all the HTML5 template documentation. You can use it
 as the location and basis for your own project's documentation.
 
 ### js
@@ -79,13 +94,9 @@ The default web server configs are for Apache. For more information, please
 refer to the [Apache Server Configs
 repository](https://github.com/h5bp/server-configs-apache).
 
-Host your site on a server other than Apache? You're likely to find the
-corresponding server configs project listed in our [Server Configs
-](https://github.com/h5bp/server-configs/blob/master/README.md) repository.
+Host your site on a server other than Apache? You're unlikely to find the
+corresponding server configs in this projects repository.
 
-### 404.html
-
-A helpful custom 404 to get you started.
 
 ### browserconfig.xml
 
@@ -103,8 +114,7 @@ editors and IDEs. [Read more about the `.editorconfig` file](misc.md#editorconfi
 ### index.html
 
 This is the default HTML skeleton that should form the basis of all pages on
-your site. If you are using a server-side templating framework, then you will
-need to integrate this starting HTML with your setup.
+your site.
 
 Make sure that you update the URLs for the referenced CSS and JavaScript if you
 modify the directory structure at all.

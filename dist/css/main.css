@@ -1,1 +1,338 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */html{color:#222;font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}audio{vertical-align:middle}canvas{vertical-align:middle}iframe{vertical-align:middle}img{vertical-align:middle}svg{vertical-align:middle}video{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.browserupgrade{margin:0.2em 0;background:#ccc;color:#000;padding:0.2em 0}.hidden{display:none !important}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap}.visuallyhidden.focusable:active{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto;white-space:inherit}.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto;white-space:inherit}.invisible{visibility:hidden}.clearfix:before{content:" ";display:table}.clearfix:after{content:" ";display:table;clear:both}@media print{*{background:transparent !important;color:#000 !important;-webkit-box-shadow:none !important;box-shadow:none !important;text-shadow:none !important}*:before{background:transparent !important;color:#000 !important;-webkit-box-shadow:none !important;box-shadow:none !important;text-shadow:none !important}*:after{background:transparent !important;color:#000 !important;-webkit-box-shadow:none !important;box-shadow:none !important;text-shadow:none !important}a{text-decoration:underline}a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}a[href^="#"]:after{content:""}a[href^="javascript:"]:after{content:""}pre{white-space:pre-wrap !important;border:1px solid #999;page-break-inside:avoid}blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr{page-break-inside:avoid}img{page-break-inside:avoid}p{orphans:3;widows:3}h2{orphans:3;widows:3;page-break-after:avoid}h3{orphans:3;widows:3;page-break-after:avoid}}
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+/* Original CSS Template taken from as mentioned ^s
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ * Converted to SCSS by Narcarsiss.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults - "Done tell my Missus"
+   ========================================================================== */
+/*This document offers two options.
+*
+* #1 To offer fall back of default fonts and sizes if one happens to have a browser or OS issue.
+* #2 To be a fallback if the online fonts fail to load for some reason.
+* You can use in main.scss | @include defaultFonts(fontName); on top of your custom font like so.
+*
+* @include defaultFonts(fontName);
+* font-family: "My Custom Font", backup, serif;
+*
+*You can also Just add your custom fonts here, and that'll reduce excess CSS code being produced and over-ridden.
+*Is should be pretty straight-forward, how to apply your Custom font inline.
+*/
+/*
+*Settings wireframing borders, used to find DOM errors.
+  $devBorder1: 1px solid green;
+  $devBorder2: 1px solid red;
+  $devBorder3: 1px solid black;
+*/
+/* line 28, ../../sass/main.scss */
+html {
+  color: #222;
+  font-family: "helvetica neue", arial, helvetica, freesans, "liberation sans", "numbus sans l", sans-serif;
+  font-size: .8em;
+  line-height: 1.25em;
+}
+
+/*
+ * Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301
+ * Vendor-prefixed and regular ::selection selectors cannot be combined: https://stackoverflow.com/a/16982510/7133471
+ */
+/* line 36, ../../sass/main.scss */
+::-moz-selection, ::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 47, ../../sass/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/* line 60, ../../sass/main.scss */
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 67, ../../sass/main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 75, ../../sass/main.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+/* line 81, ../../sass/main.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+  color: #FFF;
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  text-shadow: black -1px 1px 1px, #633 -2px 2px 3px;
+}
+
+/* ==========================================================================
+    Main Website Styles go in here. Automatically Applied to the main.scss.
+   ========================================================================== */
+/* line 5, ../../sass/_user-Styles.scss */
+h1 {
+  padding-left: 3%;
+}
+
+/* line 9, ../../sass/_user-Styles.scss */
+p, ul {
+  width: 80%;
+  max-width: 800px;
+  padding-left: 2em;
+  margin-top: 1em;
+  color: #626366;
+  font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.25em;
+}
+/* line 17, ../../sass/_user-Styles.scss */
+p li, ul li {
+  font-size: .9em;
+  margin-left: 3%;
+  color: cadetblue;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+/* line 100, ../../sass/main.scss */
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+/* line 113, ../../sass/main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/* line 132, ../../sass/main.scss */
+.visuallyhidden.focusable:active {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+/* line 141, ../../sass/main.scss */
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/* line 156, ../../sass/main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 173, ../../sass/main.scss */
+.clearfix:before {
+  content: " ";
+  display: table;
+}
+/* line 177, ../../sass/main.scss */
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   ******These examples override the primary ('mobile first') styles.******
+   Modify as content requires.
+* ============================================================================
+* Style adjustments for viewports that meet the condition
+* Style adjustments for high resolution devices
+* ==========================================================================
+  * Print styles.
+  * Inlined to avoid the additional HTTP request:
+  * https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  /* line 198, ../../sass/main.scss */
+  * {
+    background: transparent !important;
+    color: #626366 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  /* line 204, ../../sass/main.scss */
+  *:before {
+    background: transparent !important;
+    color: #626366 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  /* line 211, ../../sass/main.scss */
+  *:after {
+    background: transparent !important;
+    color: #626366 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 219, ../../sass/main.scss */
+  a {
+    text-decoration: underline;
+  }
+  /* line 221, ../../sass/main.scss */
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 226, ../../sass/main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 231, ../../sass/main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  /* line 240, ../../sass/main.scss */
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 245, ../../sass/main.scss */
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 249, ../../sass/main.scss */
+  pre {
+    white-space: pre-wrap !important;
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  /* line 258, ../../sass/main.scss */
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 262, ../../sass/main.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 265, ../../sass/main.scss */
+  tr {
+    page-break-inside: avoid;
+  }
+
+  /* line 268, ../../sass/main.scss */
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 271, ../../sass/main.scss */
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 275, ../../sass/main.scss */
+  h2 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
+
+  /* line 280, ../../sass/main.scss */
+  h3 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid;
+  }
+}

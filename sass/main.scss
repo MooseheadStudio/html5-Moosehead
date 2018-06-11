@@ -1,46 +1,45 @@
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-
-// Setting  font awesome Import
-// does this import at the top no matter what or does it import to relevent location
-//@import "icons";
-//@import "nav";
-//@import "footer";
-
-
-$color_1: #222;
-$color_2: #000;
-
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
-/*
+/* Original CSS Template taken from as mentioned ^s
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
+ * Converted to SCSS by Narcarsiss.
  */
+/* ==========================================================================
+   Base styles: opinionated defaults - "Done tell my Missus"
+   ========================================================================== */
+@import "compass";
+@import "devOptions";
+/*
+*Settings wireframing borders, used to find DOM errors.
+  $devBorder1: 1px solid green;
+  $devBorder2: 1px solid red;
+  $devBorder3: 1px solid black;
+*/
+
+//Setting basic text colours/colors.
+$textColor1: #222;
+$textColor2: #626366;
+
+@import "compass/utilities";
+
+
 
 html {
-	color: $color_1;
-	font-size: 1em;
-	line-height: 1.4;
+	color: $textColor1;
+    @include fontList(helvetica); //Used to specify default font | see _devOptions.scss
 }
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
+ * Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301
+ * Vendor-prefixed and regular ::selection selectors cannot be combined: https://stackoverflow.com/a/16982510/7133471
  */
 ::-moz-selection {
 	background: #b3d4fc;
 	text-shadow: none;
 }
+//NOTE-=-=-=-=-=-=-=-=-=-=-=-This may not work as SASS combines selectors.
 ::selection {
-	background: #b3d4fc;
-	text-shadow: none;
+  @extend ::-moz-selection;
 }
 /*
  * A better looking default horizontal rule
@@ -58,24 +57,10 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-audio {
+audio, canvas, iframe, img, svg, video {
 	vertical-align: middle;
 }
-canvas {
-	vertical-align: middle;
-}
-iframe {
-	vertical-align: middle;
-}
-img {
-	vertical-align: middle;
-}
-svg {
-	vertical-align: middle;
-}
-video {
-	vertical-align: middle;
-}
+
 /*
  * Remove default fieldset styles.
  */
@@ -95,18 +80,15 @@ textarea {
    ========================================================================== */
 .browserupgrade {
 	margin: 0.2em 0;
-	background: #ccc;
-	color: $color_2;
 	padding: 0.2em 0;
+    color: #FFF;
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    text-shadow: black -1px 1px 1px, #633 -2px 2px 3px;
 }
-/* ==========================================================================
-   Author's custom styles, CSS, SCSS they're all the same
-   ========================================================================== */
 
-
-
-
-
+//User Style Fragment Import. You wont see this import code in the .CSS file.
+  @import "user-Styles";
 
 /* ==========================================================================
    Helper classes
@@ -201,7 +183,7 @@ textarea {
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
+   ******These examples override the primary ('mobile first') styles.******
    Modify as content requires.
 * ============================================================================
 * Style adjustments for viewports that meet the condition
@@ -215,20 +197,20 @@ textarea {
 @media print {
 	* {
 		background: transparent !important;
-		color: $color_2 !important;
+		color: $textColor2 !important;
 		-webkit-box-shadow: none !important;
 		box-shadow: none !important;
 		text-shadow: none !important;
 		&:before {
 			background: transparent !important;
-			color: $color_2 !important;
+			color: $textColor2 !important;
 			-webkit-box-shadow: none !important;
 			box-shadow: none !important;
 			text-shadow: none !important;
 		}
 		&:after {
 			background: transparent !important;
-			color: $color_2 !important;
+			color: $textColor2 !important;
 			-webkit-box-shadow: none !important;
 			box-shadow: none !important;
 			text-shadow: none !important;

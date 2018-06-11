@@ -13,7 +13,7 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 [*.md]
-trim_trailing_whitespace = false
+trim_trailing_whitespace = true
 
 [{.travis.yml,package.json}]
 # The indent size used in the `package.json` file cannot be changed

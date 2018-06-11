@@ -1,5 +1,4 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com/) | [Documentation
-table of contents](TOC.md)
+[Documentation table of contents](TOC.md)
 
 # Miscellaneous
 
@@ -14,7 +13,7 @@ table of contents](TOC.md)
 
 ## .gitignore
 
-HTML5 Boilerplate includes a basic project-level `.gitignore`. This should
+This HTML5 Boilerplate includes a basic project-level `.gitignore`. This should
 primarily be used to avoid certain project-level files and directories from
 being kept under source control. Different development-environments will
 benefit from different collections of ignores.
@@ -51,8 +50,8 @@ In order for your editor/IDE to apply the
 `.editorconfig` file, you may need to [install a
 plugin]( http://editorconfig.org/#download).
 
-__N.B.__ If you aren't using the server configurations provided by HTML5
-Boilerplate, we highly encourage you to configure your server to block
+__N.B.__ If you aren't using the server configurations provided by this HTML5
+template, we highly encourage you to configure your server to block
 access to `.editorconfig` files, as they can disclose sensitive information!
 
 For more details, please refer to the [EditorConfig
@@ -64,7 +63,7 @@ project](http://editorconfig.org/).
 H5BP includes a [`.htaccess`](#htaccess) file for the [Apache HTTP
 server](https://httpd.apache.org/docs/). If you are not using Apache
 as your web server, then you are encouraged to download a
-[server configuration](https://github.com/h5bp/server-configs) that
+[server configuration from H5BP](https://github.com/h5bp/server-configs) that
 corresponds to your web server and environment.
 
 A `.htaccess` (hypertext access) file is an [Apache HTTP server
@@ -148,8 +147,7 @@ the website.
 The provided file contains three sections:
 
   * `TEAM` - this is intented to list the group of people responsible for the website
-  * `THANKS` - this is intended to list the group of people that have contributed
-  to the webste
+  * `THANKS` - this is intended to list the group of people that have contributed to the website
   * `TECHNOLOGY COLOPHON` - the section lists technologies used to make the website
   
 For more information about `humans.txt`, please see: http://humanstxt.org/

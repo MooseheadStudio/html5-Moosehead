@@ -1,13 +1,13 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com/) | [Documentation
-table of contents](TOC.md)
+[Documentation table of contents](TOC.md)
 
 # The HTML
 
-By default, HTML5 Boilerplate provides two `html` pages:
+By default, This HTML5 Template provides one `html` page:
 
 * [`index.html`](#indexhtml) - a default HTML skeleton that should form the
   basis of all pages on your website
-* [`404.html`](#404html) - a placeholder 404 error page
+  
+* [`404.html`](#404html) - Is not included, but should be added, as it's set in the Apache Config file.
 
 
 ## `index.html`
@@ -122,7 +122,7 @@ HTML5 Boilerplate comes with a simple setup that strikes a good balance for gene
 ```
 
 ## Web App Manifest
-HTML5 Boilerplate includes a simple web app manifest file. 
+This HTML5 Template includes a simple web app manifest file. 
 
 The web app manifest is a simple JSON file that allows you to control how your 
 app appears on a device's home screen, what it looks like when it launches
@@ -140,8 +140,8 @@ You should fill this file out with [more information about your site or applicat
 ## Favicons and Touch Icon
 
 The shortcut icons should be put in the root directory of your site. `favicon.ico` 
-is automatically picked up by browsers if it's placed in the root.  HTML5
-Boilerplate comes with a default set of icons (include favicon and one Apple
+is automatically picked up by browsers if it's placed in the root.  This HTML5
+Template comes with a default set of icons (include favicon and one Apple
 Touch Icon) that you can use as a baseline to create your own.
 
 Please refer to the more detailed description in the [Extend section](extend.md)
@@ -161,7 +161,7 @@ should remove the snippet of code.
 
 ## Modernizr
 
-HTML5 Boilerplate uses a custom build of Modernizr.
+This HTML5 Template uses a custom build of Modernizr.
 
 [Modernizr](https://modernizr.com/) is a JavaScript library which adds classes to
 the `html` element based on the results of feature test and which ensures that
@@ -212,12 +212,6 @@ The jQuery CDN version was chosen over other potential candidates
 because it's fast ([comparable or faster than Google by some
 measures](https://www.cdnperf.com/#jsdelivr,cdnjs,google,yandex,microsoft,jquery,bootstrapcdn/https/90))
 and, (unlike Google's CDN) is available to China's hundreds of millions of internet users.
-For many years we [chose](https://github.com/h5bp/html5-boilerplate/issues/1191)
-the Google Hosted version over the jQuery CDN because it was available
-over HTTPS (the jQuery CDN was not,) and it offered a better chance of
-hitting the cache lottery owing to the popularity of the Google CDN.
-The first issue is no longer valid and the second is far outweighed by
-being able to serve jQuery to Chinese users.
 
 While the jQuery CDN is a strong default solution your site or application may
 require a different configuration. Testing your site with services like

@@ -1,0 +1,63 @@
+// CORE
+// --------------------------
+
+/* Setting of Primary and secondary Icon colour. */
+$primary-color: #AED735;
+$secondary-color: #FB8C00;
+
+/* Setting material design icon import. */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$gmi-font-path}/MaterialIcons-Regular.eot?v=#{$gmi-icon-version}'); /* For IE6-8 */
+  src: url('#{$gmi-font-path}/MaterialIcons-Regular.eot?#iefix&v=#{$gmi-icon-version}') format('embedded-opentype'),
+    url('#{$gmi-font-path}/MaterialIcons-Regular.woff2?v=#{$gmi-icon-version}') format('woff2'),
+    url('#{$gmi-font-path}/MaterialIcons-Regular.woff?v=#{$gmi-icon-version}') format('woff'),
+    url('#{$gmi-font-path}/MaterialIcons-Regular.ttf?v=#{$gmi-icon-version}') format('truetype'),
+    url('#{$gmi-font-path}/MaterialIcons-Regular.svg?v=#{$gmi-icon-version}#materialiconregular') format('svg');
+}
+
+/* Setting defaults for material design icons. */
+.#{$gmi-css-prefix} {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.md-icon.md-1x { font-size: 18px;}
+.md-icon.md-2x { font-size: 24px; }
+.md-icon.md-3x { font-size: 36px; }
+.md-icon.md-4x { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.md-icon.md-dark { color: rgba(0, 0, 0, 0.54); }
+.md-icon.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.md-icon.md-light { color: rgba(255, 255, 255, 1); }
+.md-icon.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* setting of primary and secondary colour for Icons*/
+.md-icon.primary-color { color: $primary-color; }
+.md-icon.secondary-color { color: $secondary-color; }

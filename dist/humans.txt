@@ -1,15 +1,21 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
+## TEAM
 
-    <name> -- <role> -- <twitter>
+    Narcarsiss      -- Designer/Owner
+    BoneyMouse      -- Designer
+    BeachedAzGamer  -- Q&A
+    FluffySpinner   -- Sales
 
-# THANKS
+## THANKS
 
-    <name>
+    Angela -- Support
+    Tristan -- Life long friend, coach and mentor
+    Customer -- All past, present and Future.
 
-# TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+## TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, PHP, MySQL
+    Apache Server Configs, jQuery, Modernizr, Normalize.css, Material design icons, SASS, jQuery.

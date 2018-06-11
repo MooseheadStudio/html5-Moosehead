@@ -1,9 +1,8 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com/) | [Documentation
-table of contents](TOC.md)
+[Documentation table of contents](TOC.md)
 
 # The CSS
 
-HTML5 Boilerplate's CSS includes:
+This HTML5 Template's CSS includes:
 
 * [Normalize.css](#normalizecss)
 * [Useful defaults](#useful-defaults)
@@ -107,7 +106,7 @@ we use the [micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/).
 
 ## Media Queries
 
-HTML5 Boilerplate makes it easy for you to get started with a
+This HTML5 Template makes it easy for you to get started with a
 [_mobile first_](https://www.lukew.com/presos/preso.asp?26) and [_responsive web
 design_](https://alistapart.com/article/responsive-web-design) approach to
 development. But it's worth remembering that there are [no silver

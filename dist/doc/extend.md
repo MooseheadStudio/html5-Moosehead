@@ -1,10 +1,8 @@
-[HTML5 Boilerplate homepage](https://html5boilerplate.com) | [Documentation
-table of contents](TOC.md)
+[Documentation table of contents](TOC.md)
 
-# Extend and customise HTML5 Boilerplate
+# Extend and customise this HTML5 Template
 
-Here is some useful advice for how you can make your project with HTML5
-Boilerplate even better. We don't want to include it all by default, as
+Here is some useful advice for how you can make your project even better. We don't want to include it all by default, as
 not everything fits with everyone's needs.
 
 
@@ -118,7 +116,7 @@ Microsoft Ajax Content Delivery Network:
 
 The [optimized Google Universal Analytics
 snippet](https://mathiasbynens.be/notes/async-analytics-snippet#universal-analytics)
-included with HTML5 Boilerplate includes something like this:
+included with this HTML5 template includes something like this:
 
 ```js
 ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
