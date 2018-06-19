@@ -1,18 +1,16 @@
-/*!
- * material design @materialdesign - https://materialdesign.io
- * License - https://materialdesign.io/license
- */
-
-/* Main import of all the material design icons configurations as a whole CSS file.*/
+//*!
+// * material design @materialdesign - https://materialdesign.io
+// * License - https://materialdesign.io/license
+// * Main import of all the material design icons configurations as a whole CSS file.*/
 
 //Import the default settings, revisions and configurations
-@import "md-variables";
+@import 'md-variables';
 
 //Import a series of shortcuts to the icons, like rotations, screen reader settings.
-@import "md-mixins";
+@import 'md-mixins';
 
 //Import the primary icon settings, colour, size, transperancy.
-@import "md-core";
+@import 'md-core';
 
 //Import the codepoints of the icons (used to call icons from '/fonts')
-@import "md-icons";
+@import 'md-icons';

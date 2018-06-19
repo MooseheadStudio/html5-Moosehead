@@ -1,285 +1,277 @@
-/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
-/* Original CSS Template taken from as mentioned ^s
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- * Converted to SCSS by Narcarsiss.
- */
-/* ==========================================================================
-   Base styles: opinionated defaults - "Done tell my Missus"
-   ========================================================================== */
-@import "compass";
-@import "devOptions";
-/*
-*Settings wireframing borders, used to find DOM errors.
-  $devBorder1: 1px solid green;
-  $devBorder2: 1px solid red;
-  $devBorder3: 1px solid black;
-*/
+//*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+// Converted to SCSS by Narcarsiss
+
+//* =============================================================
+//  Base styles: opinionated defaults - "Done tell my Missus"
+//  =============================================================
+@import 'compass';
+@import 'devOptions';
+@import 'compass/utilities';
+
+//Settings wireframing borders, used to find DOM errors.
+//$devBorder1: 1px solid green;
+//$devBorder2: 1px solid red;
+//$devBorder3: 1px solid black;
+
 
 //Setting basic text colours/colors.
-$textColor1: #222;
-$textColor2: #626366;
-
-@import "compass/utilities";
-
-
+$textcolor1: #222;
+$textcolor2: #626366;
+$cadetblue: #b3d4fc;
+$offwhite: #ccc;
+$white: #fff;
+$black: #000;
+$wiigrey: #999;
+$redoxide: #633;
 
 html {
-	color: $textColor1;
-    @include fontList(helvetica); //Used to specify default font | see _devOptions.scss
-}
-/*
- * Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301
- * Vendor-prefixed and regular ::selection selectors cannot be combined: https://stackoverflow.com/a/16982510/7133471
- */
-::-moz-selection {
-	background: #b3d4fc;
-	text-shadow: none;
-}
-//NOTE-=-=-=-=-=-=-=-=-=-=-=-This may not work as SASS combines selectors.
-::selection {
-  @extend ::-moz-selection;
-}
-/*
- * A better looking default horizontal rule
- */
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
-}
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-audio, canvas, iframe, img, svg, video {
-	vertical-align: middle;
+  @include fontlist(helvetica); //Used to specify default font | see _devOptions.scss
+  color: $textcolor1;
 }
 
-/*
- * Remove default fieldset styles.
- */
+//* Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301
+//* Vendor-prefixed and regular ::selection selectors cannot be combined: https://stackoverflow.com/a/16982510/7133471
+//NOTE-=-=-=-=-=-=-=-=-=-=-=-This may not work as SASS combines selectors.
+::selection {
+  background: $cadetblue;
+  text-shadow: none;
+}
+//*
+//* A better looking default horizontal rule
+
+hr {
+  border: 0;
+  border-top: 1px solid $offwhite;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+
+//* Remove the gap between audio, canvas, iframes,
+//* images, videos and the bottom of their containers:
+//* https://github.com/h5bp/html5-boilerplate/issues/440
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+//* Remove default fieldset styles.
 fieldset {
-	border: 0;
-	margin: 0;
-	padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
-/*
- * Allow only vertical resizing of textareas.
- */
+
+// * Allow only vertical resizing of textareas.
 textarea {
-	resize: vertical;
+  resize: vertical;
 }
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+
+//* =============================
+//   Browser Upgrade Prompt
+// ==============================
 .browserupgrade {
-	margin: 0.2em 0;
-	padding: 0.2em 0;
-    color: #FFF;
-    font-family: 'Lobster', cursive;
-    font-size: 24px;
-    text-shadow: black -1px 1px 1px, #633 -2px 2px 3px;
+  color: $white;
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  margin: .2em 0;
+  padding: .2em 0;
+  text-shadow: $black -1px 1px 1px, $redoxide -2px 2px 3px;
 }
 
 //User Style Fragment Import. You wont see this import code in the .CSS file.
-  @import "user-Styles";
+@import 'user-Styles';
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-/*
- * Hide visually and from screen readers
- */
+//* ====================
+//  Helper classes
+// ====================
 
+ // * Hide visually and from screen readers
 .hidden {
-	display: none !important;
+  display: none;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
+// * Hide only visually, but have it available for screen readers:
+// * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+// *
+// * 1. For long content, line feeds are not interpreted as spaces and small width
+// *    causes content to wrap 1 word per line:
+// *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 .visuallyhidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+  &focusable {
+    &:active {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      white-space: inherit;
+      width: auto;
+    }
+
+    &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      white-space: inherit;
+      width: auto;
+    }
+  }
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable {
-	&:active {
-		clip: auto;
-		height: auto;
-		margin: 0;
-		overflow: visible;
-		position: static;
-		width: auto;
-		white-space: inherit;
-	}
-	&:focus {
-		clip: auto;
-		height: auto;
-		margin: 0;
-		overflow: visible;
-		position: static;
-		width: auto;
-		white-space: inherit;
-	}
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
+// * Hide visually and from screen readers, but maintain layout
 .invisible {
-	visibility: hidden;
+  visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
+// * Clearfix: contain floats
+// *
+// * For modern browsers
+// * 1. The space content is one way to avoid an Opera bug when the
+// *    `contenteditable` attribute is included anywhere else in the document.
+// *    Otherwise it causes space to appear at the top and bottom of elements
+// *    that receive the `clearfix` class.
+// * 2. The use of `table` rather than `block` is only necessary if using
+// *    `:before` to contain the top-margins of child elements
 .clearfix {
-	&:before {
-		content: " ";
-		display: table;
+  &:before {
+    content: '';
+    display: table;
 	}
-	&:after {
-		content: " ";
-		display: table;
-		clear: both;
+
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
 	}
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   ******These examples override the primary ('mobile first') styles.******
-   Modify as content requires.
-* ============================================================================
-* Style adjustments for viewports that meet the condition
-* Style adjustments for high resolution devices
-* ==========================================================================
-  * Print styles.
-  * Inlined to avoid the additional HTTP request:
-  * https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+//  ==========================================================================
+//  EXAMPLE Media Queries for Responsive Design.
+//  ******These examples override the primary ('mobile first') styles.******
+//  ==========================================================================
+//  Style adjustments for viewports that meet the condition
+//  Style adjustments for high resolution devices
+//  ==========================================================================
+//  Print styles.
+//  Inlined to avoid the additional HTTP request:
+//  https://www.phpied.com/delay-loading-your-print-css/
+// ===========================================================================
 
 @media print {
-	* {
-		background: transparent !important;
-		color: $textColor2 !important;
-		-webkit-box-shadow: none !important;
-		box-shadow: none !important;
-		text-shadow: none !important;
-		&:before {
-			background: transparent !important;
-			color: $textColor2 !important;
-			-webkit-box-shadow: none !important;
-			box-shadow: none !important;
-			text-shadow: none !important;
-		}
-		&:after {
-			background: transparent !important;
-			color: $textColor2 !important;
-			-webkit-box-shadow: none !important;
-			box-shadow: none !important;
-			text-shadow: none !important;
-		}
-	}
-	a {
-		text-decoration: underline;
-		&:visited {
-			text-decoration: underline;
-		}
-	}
-	a[href] {
-		&:after {
-			content: " (" attr(href) ")";
-		}
-	}
-	abbr[title] {
-		&:after {
-			content: " (" attr(title) ")";
-		}
-	}
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-	a[href^="#"] {
-		&:after {
-			content: "";
-		}
-	}
-	a[href^="javascript:"] {
-		&:after {
-			content: "";
-		}
-	}
-	pre {
-		white-space: pre-wrap !important;
-		border: 1px solid #999;
-		page-break-inside: avoid;
-	}
-  /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-	blockquote {
-		border: 1px solid #999;
-		page-break-inside: avoid;
-	}
-	thead {
-		display: table-header-group;
-	}
-	tr {
-		page-break-inside: avoid;
-	}
-	img {
-		page-break-inside: avoid;
-	}
-	p {
-		orphans: 3;
-		widows: 3;
-	}
-	h2 {
-		orphans: 3;
-		widows: 3;
-		page-break-after: avoid;
-	}
-	h3 {
-		orphans: 3;
-		widows: 3;
-		page-break-after: avoid;
-	}
+
+  %printdefaults { //Settings a silent selector to shut up the linter
+    @include box-shadow(none);
+    background: transparent;
+    box-shadow: none;
+    color: $textcolor2;
+    text-shadow: none;
+}
+  * {
+    @extend %printdefaults;
+    @include box-shadow(none);
+
+    &:before {
+      @extend %printdefaults;
+    }
+
+    &:after {
+      @extend %printdefaults;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:visited {
+      text-decoration: underline;
+    }
+  }
+
+  [href] {
+    &:after {
+      content: ' (' attr(href) ')';
+    }
+  }
+
+  abbr[title] {
+    &:after {
+      content: ' (' attr(title) ')';
+    }
+  }
+
+   // * Don't show links that are fragment identifiers,
+   // * or use the `javascript:` pseudo protocol
+  //THIS IS ALWAYS GOING TO THROW A SCSS WARNING!! GAH
+  [href^='#'] {
+    &:after {
+      content: '';
+    }
+  }
+
+  [href^='javascript:'] {
+    &:after {
+      content: '';
+    }
+  }
+
+  pre {
+    border: 1px solid $wiigrey;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+  }
+
+  // * Printing Tables:
+  // * http://css-discuss.incutio.com/wiki/Printing_Tables
+  blockquote {
+    border: 1px solid $wiigrey;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2 {
+    orphans: 3;
+    page-break-after: avoid;
+    widows: 3;
+  }
+
+  h3 {
+    orphans: 3;
+    page-break-after: avoid;
+    widows: 3;
+  }
 }

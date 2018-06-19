@@ -1,36 +1,34 @@
-//create mixin to call for default fonts
-//You should add all the fonts that you want to this Document, If one happens to fail, it will affix the next in line. This is more for Online versions of fonts rather than Offlines ones stored in /fonts
-//This @Mixin isnt needed for built in fonts (win, linux, mac) as just using font-family: helvetica; will work without any issues.
-/*This document offers two options.
-*
-* #1 To offer fall back of default fonts and sizes if one happens to have a browser or OS issue.
-* #2 To be a fallback if the online fonts fail to load for some reason.
-* You can use in main.scss | @include defaultFonts(fontName); on top of your custom font like so.
-*
-* @include defaultFonts(fontName);
-* font-family: "My Custom Font", backup, serif;
-*
-*You can also Just add your custom fonts here, and that'll reduce excess CSS code being produced and over-ridden.
-*Is should be pretty straight-forward, how to apply your Custom font inline.
-*/
-@mixin fontList ($font){
-  @if $font == "helvetica" {
-    font-family: "helvetica neue", arial, helvetica, freesans, "liberation sans", "numbus sans l", sans-serif;
+// *create mixin to call for default fonts
+// *You should add all the fonts that you want to this Document.
+// * If one happens to fail, it will affix the next in line.
+// * This @Mixin isnt needed for built in fonts (win, linux, mac) as just using font-family: font; will work without any issues.
+// *This document offers two options.
+// *
+// * #1 To offer fall back of default fonts and sizes if one happens to have a browser or OS issue.
+// * #2 To be a fallback if the online fonts fail to load for some reason.
+// * You can use in main.scss | @include defaultFonts(fontName); on top of your custom font like so.
+// *
+// * @include defaultFonts(fontName);
+// * font-family: "My Custom Font", backup, serif;
+// *
+// *You can also Just add your custom fonts here, and that'll reduce excess CSS code being produced and over-ridden.
+// *Is should be pretty straight-forward, how to apply your Custom font inline.
+
+@mixin fontlist ($font) {
+  @if $font == 'helvetica' {
+    font-family: 'helvetica neue', arial, helvetica, freesans, 'liberation sans', 'numbus sans l', sans-serif;
     font-size: .8em;
     line-height: 1.25em;
-  }
-  @else if $font == "veranda"{
-    font-family: verdana, "bitstream vera sans", "dejavu sans", "liberation sans", geneva, sans-serif;
+  }@else if $font == 'veranda' {
+    font-family: verdana, 'bitstream vera sans', 'dejavu sans', 'liberation sans', geneva, sans-serif;
     font-size: 1.1em;
     line-height: 1.25em;
-  }
-  @else if $font == "courier"{
-    font-family: "courier new", courier, freemono, "nimbus mono l", "liberation mono", monospace;
+  }@else if $font == 'courier' {
+    font-family: 'courier new', courier, freemono, 'nimbus mono l', 'liberation mono', monospace;
     font-size: .8em;
     line-height: 1.25em;
-  }
-  @else {
-    font-family: monaco, "lucida console", "dejavu sans mono", "bitstream vera sans mono", "liberation mono", monospace;
+  }@else {
+    font-family: monaco, 'lucida console', 'dejavu sans mono', 'bitstream vera sans mono', 'liberation mono', monospace;
     font-size: .8em;
     line-height: 1.25em;
   }

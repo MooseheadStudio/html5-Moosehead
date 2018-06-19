@@ -1,23 +1,26 @@
-/* ==========================================================================
-    Main Website Styles go in here. Automatically Applied to the main.scss.
-   ========================================================================== */
+// * ==========================================================================
+// *  Main Website Styles go in here. Automatically Applied to the main.scss.
+// * ========================================================================== */
+$cadetblue: #5f9ea0; //Color name - Hex Value
+
 
 h1 {
   padding-left: 3%;
 }
 
-p, ul {
-  width: 80%;
+p,
+ul {
+  @include fontlist(veranda);
+  color: $textcolor2;
+  margin-top: 1em;
   max-width: 800px;
   padding-left: 2em;
-  margin-top: 1em;
-  color: $textColor2;
-  @include fontList(veranda);
+  width: 80%;
 
   li {
+    color: $cadetblue;
     font-size: .9em;
     margin-left: 3%;
-    color:cadetblue;
   }
 }
 
