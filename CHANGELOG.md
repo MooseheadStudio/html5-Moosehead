@@ -1,6 +1,10 @@
 ## Moosehead.studio Template V1.2 (_Public, Rabbid Rabbit_)
 ###### Internal Version V1.3 (`Internal, Beefy Badger`)
 
+### Moosehead Studio base template (22June 2018)
+
+* Refactored V8.0.0 Normalize.scss to comply with scss-lint
+
 ### Moosehead Studio base template (20 June 2018)
 
 * Refactored Various SCSS files.
