@@ -5,36 +5,36 @@
 
 * Refactored Various SCSS files.
 * Linted Documents.
-* Updated Humans.txt
-* Remove Compass (Depreciated)
-* Custom Vertical Rythem
-* Susy for grid math
-* Added Auto Prefixer
-* Custom default Fonts and Fallbacks
-* Added Breakpoint
-* Added Custom Breakpoints for @Media Queries
-* Default font varibles
+* Updated Humans.txt.
+* Remove Compass (Depreciated).
+* Custom Vertical Rythem.
+* Susy for grid math.
+* Added Auto Prefixer.
+* Custom default Fonts and Fallbacks.
+* Added Breakpoint.
+* Added Custom Breakpoints for @Media Queries.
+* Default font varibles.
 
 ### Moosehead Studio base template (8 June 2018)
 
 * Cleaned up even more code/formatting/spelling.
-* Added Placeholder text for index.html
+* Added Placeholder text for index.html.
 * Updated index.html with code descriptions.
-* added some style to main.scss for index.html
+* added some style to main.scss for index.html.
 * Added descriptive text to top of each CSS document.
 * Updated identification icons.
 * Created scss.md in Docs.
-* Updated docs (css, extend, faq, html, js, misc, toc, usage)
-* Added Facebook OG to index.html
+* Updated docs (css, extend, faq, html, js, misc, toc, usage).
+* Added Facebook OG to index.html.
 * Added Tooltip support in index.html for when website is pinned.
-* Hand created support for SCSS (normalize, material design icons, HTML5 Boilerplate)(Second Revision)
-* Removed 404.html (didnt remove this from apache config as default error landing page)
+* Hand created support for SCSS (normalize, material design icons, HTML5 Boilerplate)(Second Revision).
+* Removed 404.html (didnt remove this from apache config as default error landing page).
 * Added description of code to various CSS files for better 3rd party understanding.
 * Added missing '&:' to .scss files that were removed due to human error.
-* Updated meta tag with default explination text
-* Set html document language to “en"
-* Added sitemap to robots.txt
-* Updated humans.txt
+* Updated meta tag with default explination text.
+* Set html document language to “en".
+* Added sitemap to robots.txt.
+* Updated humans.txt.
 
 ### Moosehead Studio base template (24 May 2018)
 
