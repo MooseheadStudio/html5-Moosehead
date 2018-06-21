@@ -1,28 +1,10 @@
+@charset 'UTF-8';
 //*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 // Converted to SCSS by Narcarsiss
-
-//* =============================================================
-//  Base styles: opinionated defaults - "Done tell my Missus"
-//  =============================================================
-@import 'compass';
-@import 'devOptions';
-@import 'compass/utilities';
-
-//Settings wireframing borders, used to find DOM errors.
-//$devBorder1: 1px solid green;
-//$devBorder2: 1px solid red;
-//$devBorder3: 1px solid black;
-
-
-//Setting basic text colours/colors.
-$textcolor1: #222;
-$textcolor2: #626366;
-$cadetblue: #b3d4fc;
-$offwhite: #ccc;
-$white: #fff;
-$black: #000;
-$wiigrey: #999;
-$redoxide: #633;
+@import 'bourbon';
+@import 'susy';
+@import 'defaults';
+//Includew function version
 
 html {
   @include fontlist(helvetica); //Used to specify default font | see _devOptions.scss
@@ -43,7 +25,9 @@ hr {
   border: 0;
   border-top: 1px solid $offwhite;
   display: block;
+  font-size: $base-font-size;
   height: 1px;
+  line-height: $base-line-height;
   margin: 1em 0;
   padding: 0;
 }
@@ -179,15 +163,13 @@ textarea {
 @media print {
 
   %printdefaults { //Settings a silent selector to shut up the linter
-    @include box-shadow(none);
     background: transparent;
     box-shadow: none;
     color: $textcolor2;
-    text-shadow: none;
+    text-shadow: $black 1px 1px 1px;
 }
   * {
     @extend %printdefaults;
-    @include box-shadow(none);
 
     &:before {
       @extend %printdefaults;

@@ -28,6 +28,12 @@ Choose one of the following options:
 * Placeholder CSS Media Queries.
 * Useful CSS helper classes.
 * Custom _@mixins_ for Fonts, Icons, Grid-System.
+* Custom Vertical Rythem
+* Susy for grid math
+* Auto Prefixer (Via PrePros app)
+* Custom default Fonts and Fallbacks
+* Custom Breakpoints for @Media Queries
+* Default font varibles
 * Default print styles, performance optimized.
 * An optimized version of the Google Universal Analytics snippet.
 * Protection against any stray `console` statements causing JavaScript
@@ -44,15 +50,21 @@ Choose one of the following options:
   * [Apache Server Configs](https://github.com/h5bp/server-configs-apache)
     that, among other, improve the web site's performance and security.
 
+## Requirements
+
+* Sass
+* PrePros (Free app) https://prepros.io
+  * For @Imports (Bourbon, Susy) - config included in template
+  * If you dont want to use prePros you can Import Bourbon and Susy with NPM
 
 ## Browser support
 
-* Chrome *(latest 2)*
-* Edge *(latest 2)*
-* Firefox *(latest 2)*
+* Chrome *(latest 3)*
+* Edge *(latest 3)*
+* Firefox *(latest 3)*
 * Internet Explorer 9+
-* Opera *(latest 2)*
-* Safari *(latest 2)*
+* Opera *(latest 3)*
+* Safari *(latest 3)*
 
 *<code>This doesn't mean that HTML5 template cannot be used in older browsers,
 we'll just ensure good security practices by removing compatibility with

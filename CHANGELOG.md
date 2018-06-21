@@ -1,7 +1,19 @@
-## Moosehead.studio Template V1 (_Public, Mighty Mouse_)
-###### Internal Version V1.2 (`Internal, Rabbid Rabbit`)
+## Moosehead.studio Template V1.2 (_Public, Rabbid Rabbit_)
+###### Internal Version V1.3 (`Internal, Beefy Badger`)
 
+### Moosehead Studio base template (20 June 2018)
 
+* Refactored Various SCSS files.
+* Linted Documents.
+* Updated Humans.txt
+* Remove Compass (Depreciated)
+* Custom Vertical Rythem
+* Susy for grid math
+* Added Auto Prefixer
+* Custom default Fonts and Fallbacks
+* Added Breakpoint
+* Added Custom Breakpoints for @Media Queries
+* Default font varibles
 
 ### Moosehead Studio base template (8 June 2018)
 

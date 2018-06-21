@@ -1,0 +1,120 @@
+// This document houses the Template defaults styles for;
+//Default Color
+//Default Vertical Rythem
+//Default Breakpoints for @Media Queries
+//Default Fontlist
+
+@import 'breakpoint';
+
+//Setting basic text colours/colors.
+$textcolor1: #222; //Color name - Hex Value
+$cadetblue: #5f9ea0;
+$textcolor2: #626366;
+$cadetblue: #b3d4fc;
+$offwhite: #ccc;
+$white: #fff;
+$black: #000;
+$wiigrey: #999;
+$redoxide: #633;
+
+
+//Vertical Rythem.
+//Bourbon uses the SASS em() function to convert (px)-to-em
+//To understand this; 'em(16)' = 16px which is converted to 1em
+
+$base-font-size: em(16);
+$base-line-height: em(24);
+// Level one heading
+$h1-font-size: em(38);
+$h1-line: $base-line-height/$h1-font-size * 1em;
+$h1-lines: 2;
+$h1-line-height: $h1-line * $h1-lines;
+$h1-margin-top: 0 * $h1-line;
+$h1-margin-bottom: 1 * $h1-line;
+// Level two heading
+$h2-font-size: em(28);
+$h2-line: $base-line-height/$h2-font-size * 1em;
+$h2-lines: 2;
+$h2-line-height: $h2-line * $h2-lines;
+$h2-margin-top: 0 * $h2-line;
+$h2-margin-bottom: 1 * $h2-line;
+// Level three heading
+$h3-font-size: em(21);
+$h3-line: $base-line-height/$h3-font-size * 1em;
+$h3-lines: 1;
+$h3-line-height: $h3-line * $h3-lines;
+$h3-margin-top: 0 * $h3-line;
+$h3-margin-bottom: 1 * $h3-line;
+// Level four/five/six heading
+$h4-font-size: em(16);
+$h4-line: $base-line-height/$h4-font-size * 1em;
+$h4-lines: 1;
+$h4-line-height: $h4-line * $h4-lines;
+$h4-margin-top: 0 * $h4-line;
+$h4-margin-bottom: 1 * $h4-line;
+
+
+//Really Simple, Organized, Media Queries with Sass
+//See: http://breakpoint-sass.com
+//
+//Examples: sass
+//.johnny-utah {
+//  @include breakpoint($high-tide) {
+//    content: 'Whoa.';
+//
+//Examples Compiled:
+//@media (min-width: 500px) {
+//  .johnny-utah {
+//    content: 'Whoa.';
+//
+//See, Super simple to include breakpoint media queries.
+//here we have some default sizes for common devices.
+
+// assume min-width (by default) if only a number
+$mobile: 500px;
+// set min-width/max-width if both values are numbers
+$laptop: 600px 800px;
+// if one value is a string, assume a feature/value pair
+$desktop: max-width 1000px;
+//
+$fourkdesktop: max-width 1000px;
+// string tests together within parentheses, assume each item is a feature value pair
+$tabletpotrait: (min-height 1000px) (orientation portrait);
+
+
+
+// *create mixin to call for default fonts
+// *You should add all the fonts that you want to this Document.
+// * If one happens to fail, it will affix the next in line.
+// * This @Mixin isnt needed for built in fonts (win, linux, mac) as just using font-family: font; will work without any issues.
+// *This document offers two options.
+// *
+// * #1 To offer fall back of default fonts and sizes if one happens to have a browser or OS issue.
+// * #2 To be a fallback if the online fonts fail to load for some reason.
+// * You can use in main.scss | @include defaultFonts(fontName); on top of your custom font like so.
+// *
+// * @include defaultFonts(fontName);
+// * font-family: "My Custom Font", backup, serif;
+// *
+// *You can also Just add your custom fonts here, and that'll reduce excess CSS code being produced and over-ridden.
+// *Is should be pretty straight-forward, how to apply your Custom font inline.
+
+@mixin fontlist ($font) {
+  @if $font == 'helvetica' {
+    font-family: 'helvetica neue', arial, helvetica, freesans, 'liberation sans', 'numbus sans l', sans-serif;
+    font-size: .8em;
+    line-height: 1.25em;
+  }@else if $font == 'veranda' {
+    font-family: verdana, 'bitstream vera sans', 'dejavu sans', 'liberation sans', geneva, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.25em;
+  }@else if $font == 'courier' {
+    font-family: 'courier new', courier, freemono, 'nimbus mono l', 'liberation mono', monospace;
+    font-size: .8em;
+    line-height: 1.25em;
+  }@else {
+    font-family: monaco, 'lucida console', 'dejavu sans mono', 'bitstream vera sans mono', 'liberation mono', monospace;
+    font-size: .8em;
+    line-height: 1.25em;
+  }
+}

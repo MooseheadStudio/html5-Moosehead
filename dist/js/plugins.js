@@ -1,5 +1,5 @@
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+(function () {
   var method;
   var noop = function () {};
   var methods = [
@@ -9,6 +9,7 @@
     'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
   ];
   var length = methods.length;
+  //Windows is defined once the page is loaded in browser, no need to define here.
   var console = (window.console = window.console || {});
 
   while (length--) {

@@ -1,18 +1,43 @@
 // * ==========================================================================
 // *  Main Website Styles go in here. Automatically Applied to the main.scss.
 // * ========================================================================== */
-$cadetblue: #5f9ea0; //Color name - Hex Value
+//* =============================================================
+//  Base styles: opinionated defaults - "Done tell my Missus"
+//  =============================================================
 
-
+//Defaults for Typography Rythem.
 h1 {
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+  margin: 0 0 $h1-margin-bottom;
   padding-left: 3%;
 }
+
+h2 {
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+  margin: 0 0 $h2-margin-bottom;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+  margin: 0 0 $h3-margin-bottom;
+}
+
+h4,
+h5,
+h6 {
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+  margin: 0 0 $h4-margin-bottom;
+}
+
 
 p,
 ul {
   @include fontlist(veranda);
   color: $textcolor2;
-  margin-top: 1em;
   max-width: 800px;
   padding-left: 2em;
   width: 80%;
@@ -23,4 +48,42 @@ ul {
     margin-left: 3%;
   }
 }
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+p,
+ul,
+ol,
+blockquote,
+form,
+iframe,
+table,
+td,
+th,
+label,
+textarea,
+section,
+article,
+aside {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin: 0 0 $base-line-height;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+blockquote {
+  margin-left: 2em;
+}
+
+//==================================
+//        USER STYLES HERE
+//==================================
+
 
