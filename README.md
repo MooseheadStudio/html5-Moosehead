@@ -49,6 +49,8 @@ Choose one of the following options:
     detection
   * [Apache Server Configs](https://github.com/h5bp/server-configs-apache)
     that, among other, improve the web site's performance and security.
+  * [Breakpoint](http://breakpoint-sass.com) for easy development of multi device sites and apps.
+
 
 ## Requirements
 
