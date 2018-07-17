@@ -1,6 +1,19 @@
 ## Moosehead.studio Template V1.2 (_Public, Rabbid Rabbit_)
 ###### Internal Version V1.3 (`Internal, Beefy Badger`)
 
+#### Moosehead Studio base template (17July 2018)
+
+* Prepare Release of V1.3 Rabbid Rabbit
+* Removed Susy and Bourbon - `Depreciated`
+* added Breakpoint userguide to Docs
+* Refactored some code
+* Refactored some docs
+* Updated Licence
+* added directoryStructureTree.txt
+* Updated settings for linter
+* Merging to CSSGrid (less dependencies)
+
+
 #### Moosehead Studio base template (12July 2018)
 
 * Removed internal library for `breakpoint' and imported as a ruby gem. (reduces overall template size)

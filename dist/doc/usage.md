@@ -2,7 +2,7 @@
 
 # Usage
 
-The most basic usage of HTML5 template is to create a static site or simple
+The most basic usage of the Moosehead.studio HTML5 template is to create a static site or simple
 app. Once you've downloaded or cloned the project, that process looks something
 like this:
 

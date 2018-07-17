@@ -2,7 +2,7 @@
 
 # The SCSS
 
-All of these .scss files were not availiable by default. The SCSS has been painstaikingly hand coded to be in SCSS format to allow @moosehead.studio to rapid prototype.
+All of these .scss files were not availiable by default. The CSS has been painstaikingly hand coded to be in SCSS format to allow @moosehead.studio to rapid prototype.
 We have released these SCSS files free to the public under the MIT licence (same as HTML5 Boilerplate.) 
 _Appreciate it if you can link back to this Github page in your documentation._
 

@@ -1,10 +1,10 @@
 @charset 'UTF-8';
 //*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 // Converted to SCSS by Narcarsiss
-@import 'bourbon';
+//@import 'bourbon';
 @import 'susy';
 @import 'defaults';
-//Includew function version
+//Include function version
 
 html {
   @include fontlist(helvetica); //Used to specify default font | see _devOptions.scss
